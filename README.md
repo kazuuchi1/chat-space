@@ -7,8 +7,8 @@
 |e-mail|integer|null: false, foreign_key: true|
 
 ### Association
-has_many :group
-has_many :message
+- has_many :group
+- has_many :message
 
 ## Group_groupsテーブル
 
@@ -20,7 +20,7 @@ has_many :message
 
 ### Association
 - belongs_to :group
-has_many :message
+- has_many :message
 
 ## Message_messagesテーブル
 
