@@ -1,38 +1,33 @@
-## User_usersテーブル
+# README
 
-|Column|Type|Options|
-|------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|name|integer|null: false, foreign_key: true|
-|e-mail|integer|null: false, foreign_key: true|
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-### Association
-has_many :group
-has_many :message
+Things you may want to cover:
 
-## Group_groupsテーブル
+* Ruby version
 
-|Column|Type|Options|
-|------|----|-------|
-|group_id|integer|null: false, foreign_key: true|
-|user_id|integer|null: false, foreign_key: true|
-|name|integer|null: false, foreign_key: true|
+* System dependencies
 
-### Association
-- belongs_to :group
-has_many :message
+* Configuration
 
-## Message_messagesテーブル
+* Database creation
 
-|Column|Type|Options|
-|------|----|-------|
-|message_id|integer|null: false, foreign_key: true|
-|body|integer|null: false, foreign_key: true|
-|user_id|integer|null: false, foreign_key: true|
-|name|integer|null: false, foreign_key: true|
-|image|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+* Database initialization
 
-### Association
-- belongs_to :user
-- belongs_to :group
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+
+| Left align | Right align | Center align |
+|:-----------|------------:|:------------:|
+| This       | This        | This         |
+| column     | column      | column       |
+| will       | will        | will         |
+| be         | be          | be           |
+| left       | right       | center       |
+| aligned    | aligned     | aligned      |
