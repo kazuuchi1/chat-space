@@ -1,7 +1,8 @@
 .chat {
-  width: calc(100% - 300px);
+  width: calc(100vw - 300px);
+  overflow: hidden;
   .header {
-    box-sizing: border-box;
+    // box-sizing: border-box;
     height: 100px;
     padding: 0 40px;
     .left-header {
@@ -17,7 +18,7 @@
         font-size: 12px;
         margin-top: 15px;
         .member {
-          display: inline-block;
+          // display: inline-block;
           padding-right: 5px;
         }
       }
@@ -35,7 +36,7 @@
 
   .messages {
     background-color: #FAFAFA;
-    box-sizing: border-box;
+    // box-sizing: border-box;
     padding: 46px 40px 0;
     height: calc(100vh - 100px - 90px);
     width:calc(100vw - 300px);
