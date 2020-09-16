@@ -1,12 +1,13 @@
 #サーバ上でのアプリケーションコードが設置されているディレクトリを変数に入れておく
-app_path = File.expand_path('../../../', __FILE__)
+# app_path = File.expand_path('../../../', __FILE__)
+app_path = "/var/www/chat-space"
 
 #アプリケーションサーバの性能を決定する
 worker_processes 1
 
 #アプリケーションの設置されているディレクトリを指定
-# working_directory "#{app_path}/current"
-working_directory "/var/www/chat-space/current"
+working_directory "#{app_path}/current"
+# working_directory "/var/www/chat-space/current"
 
 #Unicornの起動に必要なファイルの設置場所を指定
 listen "#{app_path}/shared/tmp/sockets/unicorn.sock"
